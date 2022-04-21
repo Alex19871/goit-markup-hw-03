@@ -214,6 +214,12 @@ span {
     .direction-list {
         display: flex;
     }
+    .direction-item {
+        margin-right: 30px;    
+    }
+    .direction-item:last-child {
+        margin-right: 0px;
+    }
     .direction-title {
         font-weight: 700;
         font-size: 36px;
@@ -231,6 +237,12 @@ span {
    .team-list {
     display: flex;
    }
+    .team-item {
+        margin-right: 30px;
+    }
+    .team-item:last-child {
+        margin-right: 0px;
+    }
     .team-title {
         font-weight: 700;
         font-size: 36px;
