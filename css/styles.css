@@ -42,6 +42,7 @@ header {
     background-color: var(--main-title-color);
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 span {
     font-family: 'Raleway';
@@ -78,7 +79,7 @@ span {
    .header-navigation {
        display: flex;
        align-items: center;
-       border-bottom: 1px solid #ECECEC;
+       
    }
     
     .header-list {
@@ -89,8 +90,8 @@ span {
     .header-item {
         display: block;
         margin-right: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
 
     }
     .header-item:last-child {
@@ -151,15 +152,16 @@ span {
     .hero {
      background-color: var(--hero-footer-bgc-color);
      padding-top: 200px;
-     padding-bottom: 280px;
-    text-align: center;
+     padding-bottom: 200px;
+     text-align: center;
         }
         
     .hero-title {
     font-weight: 900;
     font-size: 44px;
+    /* width: 696px;; */
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-title-color);
@@ -193,6 +195,7 @@ span {
   }
     .feature-title {
         font-weight: 700;
+        font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--second-title-color);
@@ -201,6 +204,10 @@ span {
     }
     .feature-item {
         width: 270px;
+        margin-right: 30px;
+    }
+    .feature-item:last-child {
+        margin-right: 0px;
     }
     .feature-text {
         line-height: 1.71;
@@ -253,7 +260,13 @@ span {
         margin-top: 0px;
     }
     .team-icon {
-        margin-bottom: 30px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .about-team-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .team-item-title {
         font-weight: 500;
@@ -277,6 +290,7 @@ span {
     padding-bottom: 60px;
     }
     .footer-logo {
+        display: inline-block;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
@@ -286,6 +300,12 @@ span {
         color: var(--footer-logo-color);
         margin-bottom: 20px;
     }
+    .footer-item {
+margin-bottom: 9px;
+    }
+    .footer-item:last-child {
+margin-bottom: 0px;
+    }
     .footer-add-link {
         font-style: normal;
         font-weight: 400;
@@ -293,7 +313,7 @@ span {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--footer-logo-color);
-        margin-bottom: 9px;
+        
     }
     .footer-add-link:hover,
     .footer-add-link:focus {
@@ -305,15 +325,26 @@ span {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        margin-bottom: 9px;
+        
     }
     .footer-link:hover,
     .footer-link:focus {
         color: var(--accent-color);
     }
+    /* --------------------------------------------samples------------------------------------------ */
+    .samples {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     .services-list {
         display: flex;
         justify-content: center;
+    }
+    .services-list >li {
+        margin-right: 8px;
+    }
+    .services-list>li:last-child {
+        margin-right: 0px;
     }
     .services-item-btn {
         
@@ -324,20 +355,15 @@ span {
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--header-color);
-        margin-right: 8px;
+       
+        border-radius: 4px;
     }
-    /* .services-item-btn:last-child {
-        margin-right: 0px;
-    } 
-    ??? ТУТ МАРЖИН НЕ ВІДМІНЯЄ, А НАВПАКИ ЗАБИРАЄ МАРЖИНИ У ВСЬОГО СПИСКУ КНОПОК
-     */
     .services-item-btn:hover,
     .services-item-btn:focus{
          color: var(--main-title-color);
          background-color: var(--accent-color);
     }
     .services-list {
-        padding-top: 94px;
         margin-bottom: 34px;
     }
     .examples-title {
@@ -346,18 +372,18 @@ span {
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--second-title-color);
-        margin-top: 20px;
-        margin-bottom: 4px;
-        text-decoration: none; 
-/* --------------------------------------не вдається забрати підреслення----------------------- */
+
     }
     .examples-text {
         font-size: 16px;
         line-height: 1.88;
         color: var(--main-text-color);
-        text-decoration: none;
+       
+    }
+    .about-examles {
+        padding-top: 20px;
         padding-bottom: 20px;
-        text-decoration: none;
+       
     }
     .examples-list {
         display: flex;
