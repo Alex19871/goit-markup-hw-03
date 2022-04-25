@@ -77,9 +77,6 @@ span {
        display: flex;
        align-items: center; 
    }
-    .header-connect {
-        display: flex;
-    }
     
     .header-list {
         display: flex;
@@ -109,13 +106,7 @@ span {
       
     .header-contacts-list{
      display: flex;
-    }
-    .header-connect {
     margin-left: auto;
-    }
-    .header-contacts-list:last-child {
-        
-        /* margin-right: 0px; */
     }
     .header-mail {
         font-weight: 500;
@@ -238,11 +229,14 @@ span {
     }
    .team-list {
     display: flex;
-    
    }
     .team-item {
         margin-right: 30px;
-        border: 1px solid #EEEEEE;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
     }
     .team-item:last-child {
         margin-right: 0px;
@@ -260,6 +254,7 @@ span {
         display: block;
         width: 100%;
         height: auto;
+       
     }
     .about-team-item {
         padding-top: 30px;
@@ -388,9 +383,12 @@ margin-bottom: 0px;
     .examples-list {
         display: flex;
         flex-wrap: wrap;
+        
     }
     .examples-item {
-        
+        display: block;
+        width: 100%;
+        height: auto;
         width: 370px;
         margin-right: 30px;
         margin-bottom: 30px;
