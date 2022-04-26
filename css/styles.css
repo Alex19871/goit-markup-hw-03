@@ -114,7 +114,7 @@ span {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--contacts-color);
-        margin-right: 50px;
+        /* margin-right: 50px; */
     }
     .header-mail:hover,
     .header-mail:focus {
@@ -126,6 +126,12 @@ span {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--contacts-color);
+        /* margin-right: 0px; */
+    }
+    .header-mail-li {
+        margin-right: 50px;
+    }
+    .header-tel-li {
         margin-right: 0px;
     }
     .header-tel:hover,
