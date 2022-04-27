@@ -211,10 +211,14 @@ span {
         display: flex;
     }
     .direction-item {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-right: 30px;    
+       
+    margin-right: 30px;
+    }
+    .direction-icon {
+    display: block;
+    width: 100%;
+    height: auto;
+    
     }
     .direction-item:last-child {
         margin-right: 0px;
@@ -392,13 +396,15 @@ margin-bottom: 0px;
         
     }
     .examples-item {
-        display: block;
-        width: 100%;
-        height: auto;
-        width: 370px;
+        
         margin-right: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid #EEEEEE;
+    }
+    .examples-icon {
+        display: block;
+        width: 100%;
+        height: auto;
     }
     .examples-item:nth-child(3n) {
         margin-right: 0px;
